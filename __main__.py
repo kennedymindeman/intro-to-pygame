@@ -1,5 +1,5 @@
-from turtle import window_width
 import pygame
+import sys
 
 window_height, window_width = 800, 600
 
@@ -12,5 +12,6 @@ while True:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             pygame.quit()
-
+            sys.exit()
+            
     pygame.display.update()
