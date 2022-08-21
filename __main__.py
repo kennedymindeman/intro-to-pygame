@@ -5,6 +5,7 @@ window_height, window_width = 800, 600
 
 pygame.init()
 screen = pygame.display.set_mode((window_height, window_width))
+pygame.display.set_caption('Runner')
 
 while True:
     # update loop
@@ -13,5 +14,5 @@ while True:
         if event.type == pygame.QUIT:
             pygame.quit()
             sys.exit()
-            
+
     pygame.display.update()
