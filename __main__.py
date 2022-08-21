@@ -5,6 +5,7 @@ window_height, window_width = 800, 600
 
 pygame.init()
 screen = pygame.display.set_mode((window_height, window_width))
+clock = pygame.time.Clock()
 pygame.display.set_caption('Runner')
 
 while True:
@@ -16,3 +17,4 @@ while True:
             sys.exit()
 
     pygame.display.update()
+    clock.tick(60)
